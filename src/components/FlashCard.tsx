@@ -74,7 +74,7 @@ export function FlashCard({
   };
 
   return (
-    <div className="w-full max-w-2xl bg-white rounded-xl shadow-lg">
+    <div className="w-full max-w-3xl bg-white rounded-xl shadow-lg">
       <div className="flex flex-col w-full">
         {/* Question Section */}
         <div className="p-6 border-b border-gray-100">
@@ -83,16 +83,16 @@ export function FlashCard({
             <span className="text-sm text-gray-500">Question {questionNumber} of {totalQuestions}</span>
           </div>
           <div className="flex flex-col items-center mb-4">
-            <div className="w-48 h-48 bg-gray-50 rounded-lg flex items-center justify-center mb-4">
+            <div className="w-full max-w-2xl h-auto bg-gray-50 rounded-lg flex items-center justify-center mb-4">
               {!imageLoaded && !imageError && (
-                <div className="w-32 h-32 flex flex-col items-center justify-center bg-gray-100 rounded-lg border-2 border-dashed border-gray-300">
+                <div className="w-full h-64 flex flex-col items-center justify-center bg-gray-100 rounded-lg border-2 border-dashed border-gray-300">
                   <div className="text-gray-400 text-center px-4">
                     <div className="text-sm font-medium mb-1">Loading Image</div>
                   </div>
                 </div>
               )}
               {imageError ? (
-                <div className="flex flex-col items-center justify-center text-gray-400">
+                <div className="w-full h-64 flex flex-col items-center justify-center text-gray-400">
                   <ImageOff size={32} />
                   <p className="text-sm mt-2">Image not available</p>
                 </div>
@@ -100,7 +100,7 @@ export function FlashCard({
                 <img
                   src={question.imageUrl}
                   alt="Question"
-                  className={`max-w-32 max-h-32 ${imageLoaded ? 'block' : 'hidden'}`}
+                  className={`w-full max-w-2xl h-auto object-contain rounded-lg ${imageLoaded ? 'block' : 'hidden'}`}
                   onLoad={() => setImageLoaded(true)}
                   onError={handleImageError}
                 />
