@@ -71,7 +71,7 @@ export const templateQuestions: QuestionData[] = [
     correctAnswer: "Powered vessel less than 50 m from ahead",
     description: "",
     fact: "",
-    imageUrl: "/images/Powered vessel less than 50 m_from ahead.png"  // Place image in public/images/
+    imageUrl: "/images/Powered vessel less than 50 m from ahead.png"  // Place image in public/images/
   },
   {
     id: 5,
@@ -156,7 +156,7 @@ export const templateQuestions: QuestionData[] = [
   {
     id: 15,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel engaged in towing more than 200 m portside",
+    correctAnswer: "Vessel engaged in towing more than 200 m port side",
     description: "",
     fact: "",
     imageUrl: "/images/Vessel_engaged in towing_more than 200 m_portside.png"  // Place image in public/images/
@@ -164,7 +164,7 @@ export const templateQuestions: QuestionData[] = [
   {
     id: 16,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel_engaged in trawling_Portside",
+    correctAnswer: "Vessel engaged in trawling port side",
     description: "",
     fact: "",
     imageUrl: "/images/Vessel_engaged in trawling_Portside.png"  // Place image in public/images/
@@ -180,7 +180,7 @@ export const templateQuestions: QuestionData[] = [
   {
     id: 18,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel_over 50 m aground from port side",
+    correctAnswer: "Vessel over 50 m aground from port side",
     description: "",
     fact: "",
     imageUrl: "/images/Vessel_over 50 m_aground_from port side.png"  // Place image in public/images/
