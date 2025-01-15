@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { QuestionData } from '../types';
 import { Check, X, ImageOff, BookOpen } from 'lucide-react';
-import { QUIZ_CONFIG } from '../data/templateQuiz';
 
 interface FlashCardProps {
   question: QuestionData;
