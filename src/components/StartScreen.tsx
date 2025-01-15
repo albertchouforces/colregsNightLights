@@ -12,10 +12,6 @@ interface StartScreenProps {
   quizConfig: QuizConfig;
 }
 
-// To use a header image, uncomment the following line and update the path
-// const HEADER_IMAGE = '/images/quiz-header.jpg';
-const HEADER_IMAGE = '/images/quiz-header.svg';
-
 export function StartScreen({ 
   onStart, 
   templateStats,
@@ -24,8 +20,8 @@ export function StartScreen({
 }: StartScreenProps) {
   const [resetCount, setResetCount] = useState(0);
   const [showGlobalLeaderboard, setShowGlobalLeaderboard] = useState(false);
-  const [headerImageError, setHeaderImageError] = useState(false);
-  const [headerImageLoaded, setHeaderImageLoaded] = useState(false);
+  const [startImageError, setStartImageError] = useState(false);
+  const [startImageLoaded, setStartImageLoaded] = useState(false);
 
   const handleReset = () => {
     onResetScores();
@@ -47,33 +43,6 @@ export function StartScreen({
 
   return (
     <div className="max-w-4xl w-full flex flex-col items-center">
-      {/* Optional Header Image */}
-      {HEADER_IMAGE && (
-        <div className="w-full max-w-3xl h-auto bg-gray-50 rounded-lg mb-8 overflow-hidden">
-          {!headerImageLoaded && !headerImageError && (
-            <div className="w-full h-48 flex flex-col items-center justify-center bg-gray-100">
-              <div className="text-gray-400 text-center px-4">
-                <div className="text-sm font-medium mb-1">Loading Header Image</div>
-              </div>
-            </div>
-          )}
-          {headerImageError ? (
-            <div className="w-full h-48 flex flex-col items-center justify-center text-gray-400">
-              <ImageOff size={32} />
-              <p className="text-sm mt-2">Header image not available</p>
-            </div>
-          ) : (
-            <img
-              src={HEADER_IMAGE}
-              alt="Quiz Header"
-              className={`w-full h-auto object-cover ${headerImageLoaded ? 'block' : 'hidden'}`}
-              onLoad={() => setHeaderImageLoaded(true)}
-              onError={() => setHeaderImageError(true)}
-            />
-          )}
-        </div>
-      )}
-
       <div className="text-center mb-8 w-full">
         <div className="flex items-center justify-center gap-3 mb-2">
           <h1 className="text-4xl font-bold text-gray-800 flex items-center gap-3">
@@ -89,6 +58,31 @@ export function StartScreen({
       {/* Quiz Card */}
       <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full w-full mb-6">
         <div className="mb-6">
+          {quizConfig.startScreenImage && (
+            <div className="w-full max-w-3xl h-auto bg-gray-50 rounded-lg mb-6 overflow-hidden">
+              {!startImageLoaded && !startImageError && (
+                <div className="w-full h-48 flex flex-col items-center justify-center bg-gray-100">
+                  <div className="text-gray-400 text-center px-4">
+                    <div className="text-sm font-medium mb-1">Loading Image</div>
+                  </div>
+                </div>
+              )}
+              {startImageError ? (
+                <div className="w-full h-48 flex flex-col items-center justify-center text-gray-400">
+                  <ImageOff size={32} />
+                  <p className="text-sm mt-2">Start screen image not available</p>
+                </div>
+              ) : (
+                <img
+                  src={quizConfig.startScreenImage}
+                  alt="Quiz Introduction"
+                  className={`w-full h-auto object-cover ${startImageLoaded ? 'block' : 'hidden'}`}
+                  onLoad={() => setStartImageLoaded(true)}
+                  onError={() => setStartImageError(true)}
+                />
+              )}
+            </div>
+          )}
           <p className="text-gray-600 mb-4 text-center">
             Test your knowledge with this interactive quiz. Try to achieve the highest score!
           </p>

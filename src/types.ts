@@ -33,4 +33,5 @@ export interface QuizConfig {
   description: string;
   themeColor: 'blue' | 'green' | 'sky' | 'red';
   quiz_name: string;
+  startScreenImage?: string;
 }
