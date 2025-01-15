@@ -92,7 +92,7 @@ export const templateQuestions: QuestionData[] = [
   {
     id: 7,
     question: "What does this signal mean?",
-    correctAnswer: "Sailing vessel_over 20 m from ahead",
+    correctAnswer: "Sailing vessel over 20 m from ahead",
     description: "",
     fact: "",
     imageUrl: "/images/Sailing vessel_over 20m_from ahead.png"  // Place image in public/images/
