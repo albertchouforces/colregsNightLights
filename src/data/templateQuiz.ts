@@ -36,7 +36,7 @@ export const QUIZ_CONFIG = {
   title: "ColRegs Night Lights Quiz",
   description: "Test your knowledge on navigation night lights",
   themeColor: 'blue' as const,  // Options: 'blue' | 'green' | 'sky' | 'red'
-  quiz_name: "colregs_night" // Unique identifier for the quiz, used in database
+  quiz_name: "colregs_night", // Unique identifier for the quiz, used in database
   startScreenImage: "/images/quiz-start.svg" // Optional: Image shown on start screen
 };
 
