@@ -44,178 +44,178 @@ export const templateQuestions: QuestionData[] = [
   {
     id: 1,
     question: "What does this signal mean?",
-    correctAnswer: "Air cushioned vehicle non displacement mode from port side",
+    correctAnswer: "Air cushion vessel in non-displacement mode port side",
     description: "",
-    fact: "",
-    imageUrl: "/images/Air cushioned vehicle_non displacement mode_from port side.png"  // Place image in public/images/
+    fact: "These vessels are power driven and so they display the same lights as power driven vessels. In addition however, so they can be distinguished, they also display and all round flashing yellow light. This is mounted where it can best be seen.",
+    imageUrl: "/images/Air cushion vessel in non-displacement mode port side.png"  // Place image in public/images/
   },
   {
     id: 2,
     question: "What does this signal mean?",
-    correctAnswer: "Mine Sweeper from ahead",
+    correctAnswer: "Mine sweeper from ahead",
     description: "",
-    fact: "",
-    imageUrl: "/images/Mine Sweeper_from ahead.png"  // Place image in public/images/
+    fact: "These vessels display the lights for a power driven vessel appropriate to their size plus three all round green lights arranged as shown.",
+    imageUrl: "/images/Mine sweeper from ahead.png"  // Place image in public/images/
   },
   {
     id: 3,
     question: "What does this signal mean?",
-    correctAnswer: "Pilot Vessel on duty starboard side",
+    correctAnswer: "Pilot vessel on duty starboard side",
     description: "",
-    fact: "",
-    imageUrl: "/images/Pilot Vessel_on duty_Starboard side.png"  // Place image in public/images/
+    fact: "A pilot vessel on duty will display an all round white light over an all round red light. This indicates to us that there is a large ship in the vicinity.",
+    imageUrl: "/images/Pilot vessel on duty starboard side.png"  // Place image in public/images/
   },
   {
     id: 4,
     question: "What does this signal mean?",
-    correctAnswer: "Powered vessel less than 50 m from ahead",
+    correctAnswer: "Power driven vessel from ahead less than 50 metres",
     description: "",
-    fact: "",
-    imageUrl: "/images/Powered vessel less than 50 m from ahead.png"  // Place image in public/images/
+    fact: "A vessel with a single masthead light is under 50 metres in length.",
+    imageUrl: "/images/Power driven vessel from ahead less than 50 metres.png"  // Place image in public/images/
   },
   {
     id: 5,
     question: "What does this signal mean?",
-    correctAnswer: "Powered vessel more than 50 m from ahead ",
+    correctAnswer: "Power driven vessel from ahead probably over 50 metres",
     description: "",
-    fact: "",
-    imageUrl: "/images/Powered vessel more than 50 m from ahead.png"  // Place image in public/images/
+    fact: "The reason we state that two mast head lights ‘probably’ mean over 50 metres is because smaller vessels are also allowed two masthead lights. However, this is usually impractical because the rules state that the second masthead light must be 4.5 metres higher than the first. Most smaller vessels don’t have the structure to accommodate this.",
+    imageUrl: "/images/Power driven vessel from ahead probably over 50 metres.png"  // Place image in public/images/
   },
   {
     id: 6,
     question: "What does this signal mean?",
-    correctAnswer: "Sailing vessel less than 20 m from ahead",
+    correctAnswer: "Sailing vessel less than 20 metres from ahead",
     description: "",
-    fact: "",
-    imageUrl: "/images/Sailing vessel_less than 20m_from ahead.png"  // Place image in public/images/
+    fact: "Smaller sailing vessels, under 20 metres in length are allowed to combine the two lights at the top of the mast.",
+    imageUrl: "/images/Sailing vessel less than 20 metres from ahead.png"  // Place image in public/images/
   },
   {
     id: 7,
     question: "What does this signal mean?",
-    correctAnswer: "Sailing vessel over 20 m from ahead",
+    correctAnswer: "Sailing vessel over 20 metres from ahead",
     description: "",
-    fact: "",
-    imageUrl: "/images/Sailing vessel_over 20m_from ahead.png"  // Place image in public/images/
+    fact: "When sailing, the vessel has to display red and green side lights and a white stern light. It does not display a forward facing masthead light as that would mean it was being propelled by machinery.",
+    imageUrl: "/images/Sailing vessel over 20 metres from ahead.png"  // Place image in public/images/
   },
   {
     id: 8,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel constrained by draught from starboard",
+    correctAnswer: "Vessel constrained by draft starboard side",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_constrained by draught_from starboard.png"  // Place image in public/images/
+    fact: "A vessel constrained by it’s draft can only navigate within the confines of a narrow channel. The draft is the distance from the waterline to the bottom of the hull or keel.",
+    imageUrl: "/images/Vessel constrained by draft starboard side.png"  // Place image in public/images/
   },
   {
     id: 9,
     question: "What does this signal mean?",
     correctAnswer: "Vessel engaged in fishing starboard side",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_engaged in fishing_Starboard side.png"  // Place image in public/images/
+    fact: "Fishing vessels also turn off their side lights and stern light when they aren’t making way.",
+    imageUrl: "/images/Vessel engaged in fishing starboard side.png"  // Place image in public/images/
   },
   {
     id: 10,
     question: "What does this signal mean?",
     correctAnswer: "Vessel engaged in pair trawling hauling nets",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_engaged in pair trawling_hauling nets.png"  // Place image in public/images/
+    fact: "Both trawlers will display green lights over white lights.",
+    imageUrl: "/images/Vessel engaged in pair trawling hauling nets.png"  // Place image in public/images/
   },
   {
     id: 11,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel engaged in pair trawling nets held fast by obstruction",
+    correctAnswer: "Vessel engaged in pair trawling nets fast upon obstruction",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_engaged in pair trawling_nets held fast by obstruction.png"  // Place image in public/images/
+    fact: "There are a total of three different way to display lights for pair trawling.",
+    imageUrl: "/images/Vessel engaged in pair trawling nets fast upon obstruction.png"  // Place image in public/images/
   },
   {
     id: 12,
     question: "What does this signal mean?",
     correctAnswer: "Vessel engaged in pair trawling shooting nets",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_engaged in pair trawling_shooting nets.png"  // Place image in public/images/
+    fact: "Sometimes trawlers will work together which is referred to as pair trawling. ",
+    imageUrl: "/images/Vessel engaged in pair trawling shooting nets.png"  // Place image in public/images/
   },
   {
     id: 13,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel engaged in purse seine fishing hampered by gear portside",
+    correctAnswer: "Vessel engaged in purse seine fishing hampered by gear port side",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_engaged in purse seine fishing_hampered by gear_portside.png"  // Place image in public/images/
+    fact: "In addition to the red over white lights, purse seiners will display to flashing yellow lights. These are installed vertically and flash alternately.",
+    imageUrl: "/images/Vessel engaged in purse seine fishing hampered by gear port side.png"  // Place image in public/images/
   },
   {
     id: 14,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel engaged in towing less than 200 m starboard side",
+    correctAnswer: "Vessel engaged in towing - less than 200 metres - starboard side",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_engaged in towing_less than 200m_Starboard side.png"  // Place image in public/images/
+    fact: "Vessels engaged in towing and whose purpose is to be able to tow will display the lights for a power driven vessel",
+    imageUrl: "/images/Vessel engaged in towing - less than 200 metres - starboard side.png"  // Place image in public/images/
   },
   {
     id: 15,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel engaged in towing more than 200 m port side",
+    correctAnswer: "Vessel engaged in towing - over 200 metres - port side",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_engaged in towing_more than 200 m_portside.png"  // Place image in public/images/
+    fact: "The length of the tow is measured from the bow of the towing vessel to the stern of the tow. If this total length exceeds 200 metres then a third white, forward facing masthead light is displayed.",
+    imageUrl: "/images/Vessel engaged in towing - over 200 metres - port side.png"  // Place image in public/images/
   },
   {
     id: 16,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel engaged in trawling port side",
+    correctAnswer: "Vessel engaged in trawling portside",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_engaged in trawling_Portside.png"  // Place image in public/images/
+    fact: "Vessels engaged in trawling instead of normal fishing will indicate the fact by displaying a green light over a white light. This lets us know that there fishing nets extending from the vessel which will present a hazard to other boats.",
+    imageUrl: "/images/Vessel engaged in trawling portside.png"  // Place image in public/images/
   },
   {
     id: 17,
     question: "What does this signal mean?",
     correctAnswer: "Vessel not under command",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_not under command.png"  // Place image in public/images/
+    fact: "They come at the top of the ‘Stand On’ list because they can’t effectively take action to avoid a collision.",
+    imageUrl: "/images/Vessel not under command.png"  // Place image in public/images/
   },
   {
     id: 18,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel over 50 m aground from port side",
+    correctAnswer: "Vessel over 50 metres aground port side",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_over 50 m_aground_from port side.png"  // Place image in public/images/
+    fact: "If the exceptional circumstance is because the vessel is aground the anchor lights will be displayed as well",
+    imageUrl: "/images/Vessel over 50 metres aground port side.png"  // Place image in public/images/
   },
   {
     id: 19,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel pushing ahead another vessel not rigidly connected",
+    correctAnswer: "Vessel pushing ahead another vessel - not rigidly connected",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_pushing ahead another vessel_not rigidly connected.png"  // Place image in public/images/
+    fact: "The vessel being pushed will also display its own side lights",
+    imageUrl: "/images/Vessel pushing ahead another vessel - not rigidly connected.png"  // Place image in public/images/
   },
   {
     id: 20,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel restricted in ability to maneuver",
+    correctAnswer: "Vessel restricted in ability to manoeuvre",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_restricted in ability to maneuver.png"  // Place image in public/images/
+    fact: "Unlike vessels that are not under command, these are not restricted due to an exceptional circumstance. Instead, these are restricted due to the nature of their work. They could be carrying out under water surveys, diving operations, laying pipes or cable or anything else that hampers them.",
+    imageUrl: "/images/Vessel restricted in ability to manoeuvre.png"  // Place image in public/images/
   },
   {
     id: 21,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel towing partially submerged object less than 100m",
+    correctAnswer: "Vessel towing partially submerged object - less than 100 metres",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_towing partially submerged object_less than 100m.png"  // Place image in public/images/
+    fact: "When towing partially submerged objects such as pontoons or salvaged vessels, the towing lights remain the same.",
+    imageUrl: "/images/Vessel towing partially submerged object - less than 100 metres.png"  // Place image in public/images/
   },
   {
     id: 22,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel towing partially submerged object more than 100m",
+    correctAnswer: "Vesssel towing partially submerged object - over 100 metres",
     description: "",
-    fact: "",
-    imageUrl: "/images/Vessel_towing partially submerged object_more than 100m.png"  // Place image in public/images/
+    fact: "If the object is over 100 metres in length then additional all round white lights must be installed so that the space between them does not exceed 100 metres.",
+    imageUrl: "/images/Vesssel towing partially submerged object - over 100 metres.png"  // Place image in public/images/
   }
 ];
 
