@@ -59,27 +59,34 @@ export function StartScreen({
       <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full w-full mb-6">
         <div className="mb-6">
           {quizConfig.startScreenImage && (
-            <div className="w-full max-w-3xl h-auto bg-gray-50 rounded-lg mb-6 overflow-hidden">
+            <div className="w-full max-w-3xl mx-auto bg-transparent rounded-lg mb-6 overflow-hidden" style={{ maxHeight: '300px' }}>
               {!startImageLoaded && !startImageError && (
-                <div className="w-full h-48 flex flex-col items-center justify-center bg-gray-100">
+                <div className="w-full h-48 flex flex-col items-center justify-center bg-gray-100 rounded-lg">
                   <div className="text-gray-400 text-center px-4">
                     <div className="text-sm font-medium mb-1">Loading Image</div>
                   </div>
                 </div>
               )}
               {startImageError ? (
-                <div className="w-full h-48 flex flex-col items-center justify-center text-gray-400">
+                <div className="w-full h-48 flex flex-col items-center justify-center text-gray-400 rounded-lg bg-gray-50">
                   <ImageOff size={32} />
                   <p className="text-sm mt-2">Start screen image not available</p>
                 </div>
               ) : (
-                <img
-                  src={quizConfig.startScreenImage}
-                  alt="Quiz Introduction"
-                  className={`w-full h-auto object-cover ${startImageLoaded ? 'block' : 'hidden'}`}
-                  onLoad={() => setStartImageLoaded(true)}
-                  onError={() => setStartImageError(true)}
-                />
+                <div className="flex justify-center items-center bg-transparent">
+                  <img
+                    src={quizConfig.startScreenImage}
+                    alt="Quiz Introduction"
+                    className={`max-h-[300px] w-auto object-contain ${startImageLoaded ? 'block' : 'hidden'}`}
+                    onLoad={() => setStartImageLoaded(true)}
+                    onError={() => setStartImageError(true)}
+                    style={{ 
+                      maxWidth: '100%',
+                      height: 'auto',
+                      display: startImageLoaded ? 'block' : 'none'
+                    }}
+                  />
+                </div>
               )}
             </div>
           )}
