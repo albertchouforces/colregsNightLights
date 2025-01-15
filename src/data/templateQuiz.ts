@@ -168,7 +168,7 @@ export const templateQuestions: QuestionData[] = [
     correctAnswer: "Vessel engaged in trawling port side",
     description: "",
     fact: "Vessels engaged in trawling instead of normal fishing will indicate the fact by displaying a green light over a white light. This lets us know that there fishing nets extending from the vessel which will present a hazard to other boats.",
-    imageUrl: "/images/Vessel engaged in trawling portside.png"  // Place image in public/images/
+    imageUrl: "/images/Vessel engaged in trawling port side.png"  // Place image in public/images/
   },
   {
     id: 17,
