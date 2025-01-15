@@ -58,9 +58,9 @@ export function StartScreen({
       {/* Quiz Card */}
       <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full w-full mb-6">
         <div className="mb-6">
-          /*<p className="text-gray-600 mb-4 text-center">
+          <p className="text-gray-600 mb-4 text-center">
             Test your knowledge with this interactive quiz. Try to achieve the highest score!
-          </p>*/
+          </p>
           <HighScoresList 
             key={`template-scores-${resetCount}`}
             scores={templateStats.highScores} 
