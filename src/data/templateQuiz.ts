@@ -33,8 +33,8 @@ import type { QuestionData } from '../types';
 
 // Quiz display configuration - Customize these values
 export const QUIZ_CONFIG = {
-  title: "ColRegs Night Lights Quiz",
-  description: "Test your knowledge on navigation night lights",
+  title: "COLREGS Night Lights Quiz",
+  description: "Test your knowledge on navigation lights at night",
   themeColor: 'blue' as const,  // Options: 'blue' | 'green' | 'sky' | 'red'
   quiz_name: "colregs_night", // Unique identifier for the quiz, used in database
   startScreenImage: "/images/quiz-start.svg" // Optional: Image shown on start screen
@@ -151,7 +151,7 @@ export const templateQuestions: QuestionData[] = [
     question: "What does this signal mean?",
     correctAnswer: "Vessel engaged in towing - less than 200 metres - starboard side",
     description: "",
-    fact: "Vessels engaged in towing and whose purpose is to be able to tow will display the lights for a power driven vessel",
+    fact: "Vessels engaged in towing and whose purpose is to be able to tow will display the lights for a power driven vessel.",
     imageUrl: "/images/Vessel engaged in towing - less than 200 metres - starboard side.png"  // Place image in public/images/
   },
   {
@@ -165,7 +165,7 @@ export const templateQuestions: QuestionData[] = [
   {
     id: 16,
     question: "What does this signal mean?",
-    correctAnswer: "Vessel engaged in trawling portside",
+    correctAnswer: "Vessel engaged in trawling port side",
     description: "",
     fact: "Vessels engaged in trawling instead of normal fishing will indicate the fact by displaying a green light over a white light. This lets us know that there fishing nets extending from the vessel which will present a hazard to other boats.",
     imageUrl: "/images/Vessel engaged in trawling portside.png"  // Place image in public/images/
@@ -183,7 +183,7 @@ export const templateQuestions: QuestionData[] = [
     question: "What does this signal mean?",
     correctAnswer: "Vessel over 50 metres aground port side",
     description: "",
-    fact: "If the exceptional circumstance is because the vessel is aground the anchor lights will be displayed as well",
+    fact: "If the exceptional circumstance is because the vessel is aground the anchor lights will be displayed as well.",
     imageUrl: "/images/Vessel over 50 metres aground port side.png"  // Place image in public/images/
   },
   {
@@ -191,7 +191,7 @@ export const templateQuestions: QuestionData[] = [
     question: "What does this signal mean?",
     correctAnswer: "Vessel pushing ahead another vessel - not rigidly connected",
     description: "",
-    fact: "The vessel being pushed will also display its own side lights",
+    fact: "The vessel being pushed will also display its own side lights.",
     imageUrl: "/images/Vessel pushing ahead another vessel - not rigidly connected.png"  // Place image in public/images/
   },
   {
@@ -213,10 +213,10 @@ export const templateQuestions: QuestionData[] = [
   {
     id: 22,
     question: "What does this signal mean?",
-    correctAnswer: "Vesssel towing partially submerged object - over 100 metres",
+    correctAnswer: "Vessel towing partially submerged object - over 100 metres",
     description: "",
     fact: "If the object is over 100 metres in length then additional all round white lights must be installed so that the space between them does not exceed 100 metres.",
-    imageUrl: "/images/Vesssel towing partially submerged object - over 100 metres.png"  // Place image in public/images/
+    imageUrl: "/images/Vessel towing partially submerged object - over 100 metres.png"  // Place image in public/images/
   }
 ];
 
