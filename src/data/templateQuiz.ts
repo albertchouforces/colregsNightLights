@@ -34,7 +34,7 @@ import type { QuestionData } from '../types';
 // Quiz display configuration - Customize these values
 export const QUIZ_CONFIG = {
   title: "COLREGs Night Lights Quiz",
-  description: "Test your knowledge on navigation lights at night",
+  description: "Test your knowledge of navigation lights at night",
   themeColor: 'blue' as const,  // Options: 'blue' | 'green' | 'sky' | 'red'
   quiz_name: "colregs_night", // Unique identifier for the quiz, used in database
   startScreenImage: "/images/quiz-start.svg" // Optional: Image shown on start screen
