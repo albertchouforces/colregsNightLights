@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BookOpen, Globe2, ImageOff } from 'lucide-react';
+import { BookOpen, Globe2, ImageOff, Play } from 'lucide-react';
 import { QuizStats, QuizConfig } from '../types';
 import { HighScoresList } from './HighScoresList';
 import { GlobalLeaderboard } from './GlobalLeaderboard';
@@ -107,6 +107,7 @@ export function StartScreen({
             onClick={onStart}
             className={`w-full max-w-md inline-flex items-center justify-center gap-2 px-6 py-3 ${colorClasses.button} text-white rounded-lg transition-colors font-semibold`}
           >
+            <Play size={20} />
             Start Quiz
           </button>
         </div>
