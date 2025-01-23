@@ -64,9 +64,6 @@ export function GlobalLeaderboard({ onClose }: GlobalLeaderboardProps) {
             </button>
           </div>
 
-          <p className="text-gray-600">
-            Top scores for {QUIZ_CONFIG.title}
-          </p>
         </div>
 
         <div className="flex-1 overflow-auto p-6">
