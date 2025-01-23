@@ -13,7 +13,7 @@ interface HighScoresListProps {
 export function HighScoresList({ 
   scores, 
   onReset, 
-  title = "Local High Scores",
+  title = "Local Top Scores",
   headerBackground = true,
   quizConfig
 }: HighScoresListProps) {
