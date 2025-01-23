@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { getGlobalScores, type GlobalScoreEntry } from '../lib/supabase';
 import { Medal } from './Medal';
 import { Trophy, Loader2, X } from 'lucide-react';
-import { QUIZ_CONFIG } from '../data/templateQuiz';
 
 interface GlobalLeaderboardProps {
   onClose: () => void;
