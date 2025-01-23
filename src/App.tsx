@@ -4,6 +4,7 @@ import { ScoreDisplay } from './components/ScoreDisplay';
 import { StartScreen } from './components/StartScreen';
 import { UserNameInput } from './components/UserNameInput';
 import { Footer } from './components/Footer';
+import { QuizHeader } from './components/QuizHeader';
 import { templateQuestions, QUIZ_CONFIG } from './data/templateQuiz';
 import { shuffleArray, getRandomOptions } from './lib/utils';
 import type { QuizStats, QuestionData, HighScoreEntry } from './types';
@@ -196,6 +197,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
+      {gameState !== 'start' && <QuizHeader quizConfig={QUIZ_CONFIG} />}
       <div className="flex-1 py-8 px-4">
         <div className="container mx-auto flex flex-col items-center gap-8">
           {gameState === 'start' ? (
