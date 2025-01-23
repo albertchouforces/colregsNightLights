@@ -97,7 +97,7 @@ export function StartScreen({
             key={`template-scores-${resetCount}`}
             scores={templateStats.highScores} 
             onReset={handleReset}
-            title="Local High Scores"
+            title="Local Top Scores"
             headerBackground={true}
             quizConfig={quizConfig}
           />
