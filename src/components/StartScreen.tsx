@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BookOpen, Globe2, ImageOff, Play } from 'lucide-react';
+import { Ship, Globe2, ImageOff, Play } from 'lucide-react';
 import { QuizStats, QuizConfig } from '../types';
 import { HighScoresList } from './HighScoresList';
 import { GlobalLeaderboard } from './GlobalLeaderboard';
@@ -46,7 +46,7 @@ export function StartScreen({
       <div className="text-center mb-8 w-full">
         <div className="flex items-center justify-center gap-3 mb-2">
           <h1 className="text-4xl font-bold text-gray-800 flex items-center gap-3">
-            <BookOpen className={colorClasses.text} size={32} />
+            <Ship className={colorClasses.text} size={32} />
             {quizConfig.title}
           </h1>
         </div>
