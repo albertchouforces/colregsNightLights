@@ -120,7 +120,7 @@ export function StartScreen({
           className="flex items-center justify-center gap-2 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg transition-colors font-semibold shadow-md"
         >
           <Globe2 size={20} />
-          Global Leaderboard
+          View Global Leaderboard
         </button>
       )}
 
