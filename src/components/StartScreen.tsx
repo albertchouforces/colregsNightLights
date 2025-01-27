@@ -114,6 +114,7 @@ export function StartScreen({
       </div>
 
       {/* Global Leaderboard Button */}
+      <div className="w-full flex items-center gap-4 mb-4"></div>
       {ENABLE_GLOBAL_LEADERBOARD && (
         <button
           onClick={() => setShowGlobalLeaderboard(true)}
